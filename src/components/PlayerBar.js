@@ -22,9 +22,9 @@ class PlayerBar extends Component {
           <div className="total-time">–:––</div>
         </section>
         <section id="volume-control">
-          <div className="icon ion-md-volume-down"></div>
+          <div className="icon ion-md-volume-low"></div>
           <input type="range" className="seek-bar" value="80" />
-          <div className="icon ion-md-volume-up"></div>
+          <div className="icon ion-md-volume-high"></div>
         </section>
       </section>
     );
