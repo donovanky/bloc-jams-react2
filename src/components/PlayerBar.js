@@ -34,7 +34,6 @@ class PlayerBar extends Component {
           <input
             type="range"
             className="seek-bar"
-            value={ this.props.currentVolume }
             max="1"
             min="0"
             step="0.01"
@@ -46,5 +45,4 @@ class PlayerBar extends Component {
     );
   }
 }
-
 export default PlayerBar;
