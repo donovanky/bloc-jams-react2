@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 
+
+
+
 class Album extends Component {
   constructor(props) {
     super(props);
@@ -86,10 +89,6 @@ class Album extends Component {
         return(
           <td><button><span className="icon ion-md-pause"></span></button></td>
         );
-      } else if(this.state.isPlaying && !isSameSong){
-        return(
-          <td><button><span className="icon ion-md-play"></span></button></td>
-        );
       } else if(this.state.isHovering === index){
         return(
           <td><button><span className="icon ion-md-play"></span></button></td>
@@ -142,6 +141,8 @@ class Album extends Component {
         return "-:--"
       }
     }
+
+
 
   render() {
     return (
