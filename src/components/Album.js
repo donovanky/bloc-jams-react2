@@ -58,10 +58,6 @@ class Album extends Component {
         return(
           <td><button><span className="icon ion-md-pause"></span></button></td>
         );
-      } else if(this.state.isPlaying && !isSameSong){
-        return(
-          <td><button><span className="icon ion-md-play"></span></button></td>
-        );
       } else if(this.state.isHovering === index){
         return(
           <td><button><span className="icon ion-md-play"></span></button></td>
