@@ -8,7 +8,18 @@
   height: 40vmin;
 }
 
-.header {
+.song-list {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#song-list {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -32,9 +43,10 @@
   }
 }
 
-.song-list{
+/*#song-list{
   padding: 20;
   margin: 20;
   text-align: center;
   float: center;
 }
+*/
