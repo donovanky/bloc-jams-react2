@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -7,7 +8,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -29,4 +30,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.song-list{
+  padding: 20;
+  margin: 20;
+  text-align: center;
+  float: center;
 }
