@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './PlayBar.css';
 
 class PlayerBar extends Component {
   render() {
@@ -19,7 +20,7 @@ class PlayerBar extends Component {
           </button>
         </section>
         <section id="time-control">
-          <div className="current-time">{this.props.formatTime(this.props.currentTime)}</div>
+          <span id="currentTime"><div className="current-time"><p>"Current Time"</p>{this.props.formatTime(this.props.currentTime)}</div></span>
           <input
             type="range"
             className="seek-bar"
@@ -29,10 +30,13 @@ class PlayerBar extends Component {
             step="0.01"
             onChange={this.props.handleTimeChange}
           />
+          <div className= "time-remaining">{this.props.formatTime(this.props.duration - this.props.currentTime)}</div>
           <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
         </section>
+        <div className = "volume-Bar">
         <section id="volume-control">
           <div className="icon ion-md-volume-low"></div>
+          <div className PlayerBar-Actual>
           <input
             type="range"
             className="seek-bar"
@@ -42,9 +46,11 @@ class PlayerBar extends Component {
             step="0.01"
             onChange={ this.props.handleVolumeChange }
           />
+          </div>
+          </section>
+        </div>
           <div className="icon ion-md-volume-high"></div>
         </section>
-      </section>
     );
   }
 }
