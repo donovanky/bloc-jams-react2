@@ -1,0 +1,17 @@
+.library{
+  display: flex;
+  /*border-style: solid;
+  implement this if albums is greater than or equal to 3 songs */
+}
+
+.Title{
+  font-size: 35px;
+}
+
+.Artist{
+  font-size: 20px;
+}
+
+.Song-Length{
+  font-size: 20px;
+}
