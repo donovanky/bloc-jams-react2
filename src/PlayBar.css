@@ -1,0 +1,22 @@
+.song-list{
+  padding: 20;
+  margin: 20;
+  text-align: center;
+  float: center;
+  width: 100%;
+}
+
+.seek-bar{
+  width: 100%;
+  display: grid;
+}
+
+.volume-Bar{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.icon ion-md-volume-low{
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
