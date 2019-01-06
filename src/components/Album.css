@@ -1,0 +1,36 @@
+.album{
+  display: flex;
+}
+
+.album-image{
+  margin: 5px 5% 5px 5px;
+}
+
+.album-details{
+  font-size: 20px;
+}
+
+.title{
+  font-size: 30px;
+}
+
+.artist{
+  font-size: 20px;
+}
+
+.releaseInfo{
+  font-size: 15px;
+}
+
+.player-bar{
+
+}
+
+.song-list{
+  /*
+  implement a way to bring .player-bar over this - reducing padding did not remove box size
+  - investigate putting buttons into song-list box or better yet songs into player-bar box
+  padding-top: 0px;
+  padding-bottom: 0px;
+  */
+}
