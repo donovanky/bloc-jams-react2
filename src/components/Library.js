@@ -14,14 +14,14 @@ class Library extends Component {
         <div className = 'card'>
         {
           this.state.albums.map( (album, index) =>
+          <div className ='card-body'>
             <Link to={`/album/${album.slug}`} key={index}>
               <img src={album.albumCover} alt={album.title} />
-              <div className ='container'>
               <div className= "Title">{album.title}</div>
               <div className= "Artist">{album.artist}</div>
               <div className= "Song-Length">{album.songs.length} songs</div>
-              </div>
             </Link>
+          </div>
           )
         }
         </div>
