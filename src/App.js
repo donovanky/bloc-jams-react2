@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-        <nav>
+        <nav id = 'link-list'>
         <ul>
-          <li><Link to='/'>Landing</Link></li>
+          <li><Link to='/'><img src="./../assets/images/bloc_jams_logo.png" alt="Bloc Jams Landing" /></Link></li>
           <li><Link to='/library'>Library</Link></li>
         </ul>
         </nav>
